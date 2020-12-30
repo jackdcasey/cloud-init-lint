@@ -8,7 +8,6 @@ The container reads stdin, writes it to a file then runs `cloud-init devel schem
 
 ```
 cat ${file} | docker run -i cloud-init-lint
-
 ```
 
 Valid:
