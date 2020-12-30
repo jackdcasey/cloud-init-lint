@@ -1,7 +1,7 @@
-FROM ubuntu:20.04
+FROM alpine:edge
 
-RUN apt-get update -y && \
-    apt-get install cloud-init -y
+RUN apk update && \
+    apk --no-cache add bash cloud-init
 
 COPY ./entrypoint.sh ./entrypoint.sh
 
